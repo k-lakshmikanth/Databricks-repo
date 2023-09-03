@@ -1,6 +1,7 @@
 from requests import get,post,patch,delete
-from config import config
+from config import *
 
+# 'databricks_api' class gets the access token and stored in header attribute which can be used for further classes
 class databricks_api():
     def __init__(self):
         self.__dict__.update(config)
@@ -17,6 +18,8 @@ class databricks_api():
                 })
         self.header={"Authentication":f'Bearer {responce.json()["access_token"]}'}
     
+
+# "repos" class is used for multiple functions like 'repos list', 'repo metadata', 'create repo', 'update repo', 'delete repo', 'repo permissions data'
 class repos(databricks_api):
     def __init__(self):
         super().__init__()
