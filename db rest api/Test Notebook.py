@@ -1,7 +1,4 @@
 # Databricks notebook source
-
-# COMMAND ----------
-
 from dbapi import repos
 
 # COMMAND ----------
