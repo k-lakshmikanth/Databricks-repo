@@ -5,6 +5,10 @@
 
 # COMMAND ----------
 
+dbutils.secrets.listScopes()
+
+# COMMAND ----------
+
 secret = dbutils.secrets.get(scope = "SatheeshKumar-KV", key = "az-adls-mnt-sec")
 
 # COMMAND ----------
