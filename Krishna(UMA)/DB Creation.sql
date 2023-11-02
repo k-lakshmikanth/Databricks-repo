@@ -1,0 +1,25 @@
+-- Databricks notebook source
+-- BRONZE LAYER
+CREATE DATABASE IF NOT EXISTS EDL_BL_DEV;
+-- SILVER LAYER
+CREATE DATABASE IF NOT EXISTS EDL_SL_DEV;
+-- GOLD LAYER
+CREATE DATABASE IF NOT EXISTS EDL_GL_DEV;
+-- CONFIG
+CREATE DATABASE IF NOT EXISTS EDL_CONFIG_DEV;
+
+-- COMMAND ----------
+
+create table EDL_CONFIG_DEV.ctl_table_sync(sno varchar(200))
+
+-- COMMAND ----------
+
+INSERT INTO EDL_CONFIG_DEV.ctl_table_sync VALUES('VENKAT')
+
+-- COMMAND ----------
+
+SELECT * FROM EDL_CONFIG_DEV.ctl_table_sync
+
+-- COMMAND ----------
+
+
