@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net" modified="2023-11-09T17:58:47.959Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="YjQlJf_ksLZiA565SEZl" version="22.1.0" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1434" dy="1953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="sKV7Br36NTfYx774qnBV-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="sKV7Br36NTfYx774qnBV-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="MetaDataLookup" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="382.5" y="-840" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="-610" as="sourcePoint" />
+            <mxPoint x="800" y="-610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-4" target="sKV7Br36NTfYx774qnBV-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-4" target="sKV7Br36NTfYx774qnBV-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-4" value="Create Job" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="-460" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-8" target="sKV7Br36NTfYx774qnBV-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-8" target="sKV7Br36NTfYx774qnBV-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-8" value="Create Batch&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="-10" width="190" height="60" as="geometry" />
+        </mxCell>
+        <object label="" id="sKV7Br36NTfYx774qnBV-26">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-17" target="sKV7Br36NTfYx774qnBV-25" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="sKV7Br36NTfYx774qnBV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-17" target="sKV7Br36NTfYx774qnBV-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-17" value="Success&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Fail/Cancel" style="rhombus;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="375" y="-295" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-22" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;1)This calls a notebook &quot;get_src_meta_data&quot;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;2)All the tables which needs to be processed will be kept in Control table and this drives the entire pipeline execution process.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;3)Watermark value and load type is maintained here to handle Incremental and Full loads.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;4)Each entry is uniquely identified,it will have an active flag indicater so that we can disable in active entries.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;5)It will have column list where we&amp;nbsp; will store all select statements in it and we use that to process the data.&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="962.5" y="-905" width="407.5" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-24" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;1)EDL_CONFIG_DEV.etl_job_history is the table where all job history is updated.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;2)As part of initial process it will insert a new Job ID for the new process.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;3)We are capturing success,running,cancel and failing statuses in job history table.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;4)With job log ,when ever there is failure or cancelled will be processed in next iteration...e it will give a Retry attempt from where it is failed&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="960" y="-650" width="410" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-25" target="sKV7Br36NTfYx774qnBV-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-25" value="Logging to Job History Table" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="740" y="-280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-27" target="sKV7Br36NTfYx774qnBV-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-27" value="Retry Attempt&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="740" y="-460" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-33" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;1)etl_batch_history&amp;nbsp;is the table where all batch history is updated.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;2)As part of initial process it will insert a new New BatchID for the new batch.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;3)We are capturing success,running,cancel and failing statuses in batch history table.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;4)With batch log ,when ever there is failure or cancelled will be processed in next iteration...i.e it will give a Retry attempt from where it is failed&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="962.5" y="-180" width="410" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-34" target="sKV7Br36NTfYx774qnBV-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-34" value="Logging to Job History table on success" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="390" y="-130" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-41" target="sKV7Br36NTfYx774qnBV-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-41" target="sKV7Br36NTfYx774qnBV-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-41" value="Success&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Fail/Cancel" style="rhombus;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="375" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-43" target="sKV7Br36NTfYx774qnBV-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-43" value="Logging to Batch History table on success" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="390" y="290" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-45" target="sKV7Br36NTfYx774qnBV-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-45" value="Logging to Job History Table" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="740" y="125" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-47" target="sKV7Br36NTfYx774qnBV-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-47" value="Retry Attempt" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="740" y="-10" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-50" target="sKV7Br36NTfYx774qnBV-52" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-50" target="cLSf2xtk1npk4WKIa0hI-0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-50" value="Create Process" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="450" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-52" target="cLSf2xtk1npk4WKIa0hI-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-52" value="Source Data Extraction" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="760" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-54" value="&lt;div style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;1)Data extraction notebook will accept the below parameters&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;DestinationSchema: &lt;br&gt;TableName: &lt;br&gt;SourceName: &lt;br&gt;ColumnList: &lt;br&gt;LoadType: &lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;2)In next step we will update the watermark value of table in the control table if it is full load.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;3)We will have&amp;nbsp;ctl_source_bl_mapping table where we get always latest schema.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;4)With a mapping ID we will compare source and target schema and append this table so as every time we get latest schema.&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;5)When it is incremental load, through merge operation we update the ctl_source_bl_mapping&amp;nbsp;by comparing source and target schema&#39;s&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;6)When it is full load truncate and load is performed&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="962.5" y="660" width="407.5" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="sKV7Br36NTfYx774qnBV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKV7Br36NTfYx774qnBV-52" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-0" value="&lt;div align=&quot;left&quot;&gt;1)ETL_PROCESS_HISTORY is the table where all process history is maintained.&lt;br&gt;&lt;br&gt;2)As part of initial process it will insert a new New ExecutionID for the new process for each dataset and capturing row counts information before and after process completion including the duration. &lt;br&gt;&lt;br&gt;3)We will keep the both Batch and Process status as Running with ExecutionStartTime as ADF pipeline activity start time at this stage by keeping Target table row count 0 if it is in Full load mode otherwise record count from the Target table.&lt;br&gt;&lt;br&gt;4)Success, Running, Failed status are maintained.&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="961.25" y="355" width="407.5" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="cLSf2xtk1npk4WKIa0hI-3" target="cLSf2xtk1npk4WKIa0hI-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="cLSf2xtk1npk4WKIa0hI-3" target="cLSf2xtk1npk4WKIa0hI-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-3" value="Update Process" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="368.75" y="1187.5" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-5" value="1)ETL_PROCESS_HISTORY is the table where all process history is maintained.&lt;br&gt;&lt;br&gt;2) Using the existing ExecutionID and Table details, if the process is completed without errors then it update the status to SUCCESS with ExecutionEndTime, Process rows count including duration, else it update the status to FAILED with error details.&lt;br&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="962.5" y="1150" width="410" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="cLSf2xtk1npk4WKIa0hI-21" target="cLSf2xtk1npk4WKIa0hI-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-21" value="Update Batch " style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#FFD966;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="368.75" y="1447.5" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cLSf2xtk1npk4WKIa0hI-22" value="1)ETL_BATCH_HISTORY is the table where all batch history is maintained.&lt;br&gt;&lt;br&gt;2)Using the existing Batch details, RetryAttempt and ErrorDescription, if the process is completed without errors then it update the status to SUCCESS with ExecutionEndTime, Process rows count including duration, else it update the status to FAILED with ErrorDescription." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="962.5" y="1408.75" width="410" height="137.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
