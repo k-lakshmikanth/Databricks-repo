@@ -1,26 +1,22 @@
 # Databricks notebook source
-# # Define input widgets
-# dbutils.widgets.text("BatchId", "")
-# dbutils.widgets.text("DestinationSchema", "")
-# dbutils.widgets.text("TableName", "")
-# dbutils.widgets.text("SourceName", "")
-# dbutils.widgets.text("ColumnList", "")
-# dbutils.widgets.text("LoadType", "")
+# Define input widgets
+dbutils.widgets.text("BatchId", "")
+dbutils.widgets.text("DestinationSchema", "")
+dbutils.widgets.text("TableName", "")
+dbutils.widgets.text("SourceName", "")
+dbutils.widgets.text("ColumnList", "")
+dbutils.widgets.text("LoadType", "")
 
-
-# COMMAND ----------
-
-dbutils.widgets.removeAll()
 
 # COMMAND ----------
 
 # Get the values of parameters using dbutils.widgets module
-DestinationSchema = "kpi_cloud_bl"
-table_name = "Contact"
-src_name = "source2"
-ColumnList = "select * from source2.contact"
-LoadType = "F"
-V_BatchId = "10"
+DestinationSchema = dbutils.widgets.get("DestinationSchema")
+table_name = dbutils.widgets.get("TableName")
+src_name = dbutils.widgets.get("SourceName")
+ColumnList = dbutils.widgets.get("ColumnList")
+LoadType = dbutils.widgets.get("LoadType")
+V_BatchId = dbutils.widgets.get("BatchId")
 import sys
 # Print the parameter values (optional)
 print("DestinationSchema:", DestinationSchema)
@@ -74,10 +70,6 @@ except Exception as e:
 
 # COMMAND ----------
 
-print(*[i.Dst_cl_nm for i in spark.sql(f"""select * from kpi_etl_analytics_conf.ctl_source_bl_mapping where Src_Schema_nm = 'Source2'""").collect()], sep=" Varchar(100), ",end=" Varchar(100)")
-
-# COMMAND ----------
-
 from pyspark.sql.functions import lit,col
 from pyspark.sql.functions import current_timestamp
 from pyspark.sql import DataFrame
@@ -91,14 +83,14 @@ try:
         # Read the source table from the SQL Server
         V_Query = spark.sql(f"""select ColumnList from kpi_etl_analytics_conf.ctl_table_sync where TableName='{table_name}' and SourceName='{src_name}' """).collect()[0][0]
         display(V_Query)
-        V_IsDataFromApi = "Y" if spark.sql(f"""select SourceType from kpi_etl_analytics_conf.ctl_table_sync where TableName='{table_name}' and SourceName='{src_name}' """).collect()[0][0].upper() == "API" else "N"
+        V_IsDataFromApi = spark.sql(f"""select IsDataFromApi from kpi_etl_analytics_conf.ctl_table_sync where TableName='{table_name}' and SourceName='{src_name}' """).collect()[0][0]
         display(V_IsDataFromApi)
         # Read the source table from the SQL Server
         try:
             if V_IsDataFromApi=='N':
                 # Extract metadata values
                 query = f"({V_Query} where lastLoadDate >= '{V_WatermarkVlaue}' ) AS custom_query"
-                source_df = spark.read.format("jdbc").option("url", jdbcurl).option("dbtable", query).load()
+                source_df = spark.read.jdbc(url=jdbcurl, table=query, properties=connectionProperties)
                 print(query)
             else:
                 print(V_Query)
@@ -115,7 +107,7 @@ try:
 
         # Check if the destination table exists
         try:
-            destination_df = spark.sql(f"select * from {DestinationSchema}.{src_name}_{table_name} limit 1")
+            destination_df = spark.read.json(f"/mnt/adls_landing/bronze/{src_name}_{table_name}")
         except Exception as e:
             print(f"Error accessing destination table: {e}")
             destination_df = None
@@ -149,7 +141,9 @@ try:
                     
                     try:
                         # Insert a new mapping record into the ctl_bl_sl_mapping table
-                        spark.sql(f"""INSERT INTO kpi_etl_analytics_conf.ctl_bl_sl_mapping VALUES ({mapping_id}, '{DestinationSchema}', '{src_name}', '{table_name}', '{column_name}', '{src_name}', 'kpi_cloud_sl', 'Hed_{table_name}', '{dst_col_nm}', 'N')""")
+                        spark.sql(f"""INSERT INTO kpi_etl_analytics_conf.ctl_bl_sl_mapping 
+                                    VALUES ({mapping_id}, '{src_name}', '{table_name}', '{column_name}', 
+                                    '{src_name}', '{DestinationSchema}', 'Hed_{table_name}', '{dst_col_nm}', 'N',"direct")""")
                     except Exception as e:
                         # Print error message and raise exception if the insert fails
                         print(f"Error inserting mapping record: {e}")
@@ -226,8 +220,10 @@ try:
                     # Use the function to perform the upsert operation
                     br_table_name = f"{DestinationSchema}_{src_name}_{table_name}" # Replace with the actual name of your bronze table
                     print(br_table_name)
-                    spark.read.json("<path>").createOrReplaceTempView(br_table_name)
+                    spark.read.json(f"/mnt/adls_landing/bronze/{src_name}_{table_name}").createTempView(br_table_name)
                     num_inserted_rows,num_updated_rows = upsert_into_bronze_table(source_df2, br_table_name, column_mapping,mapping_df)
+                    spark.sql(f"SELECT * FROM {br_table_name}")\
+                        .write.json(f"/mnt/adls_landing/bronze/{src_name}_{table_name}", mode = "overwrite")
                 except Exception as e:
                     print(e)
                     V_error_message = str(e)
@@ -238,21 +234,18 @@ try:
         else:
             print("Full load is running")
             # Truncate the bronze layer to load the full load
-            if destination_df:
-                try:
-                    spark.sql(f"truncate table {DestinationSchema}.{src_name}_{table_name}")
-                except Exception as e:
-                    print(f"Error truncating the destination table: {e}")
-                    raise e
+            # if destination_df:
+            #     try:
+            #         spark.sql(f"truncate table {DestinationSchema}.{src_name}_{table_name}")
+            #     except Exception as e:
+            #         print(f"Error truncating the destination table: {e}")
+            #         raise e
 
             # Write source data to ADLS table
             try:
                 num_inserted_rows = source_df2.count()
                 source_df2 = source_df2.withColumn("LastmodifiedDate", current_timestamp())
-                source_df2.write.format("delta").mode("overwrite") \
-                    .option("path", f"/mnt/adls_landing/bronze/{src_name}_{table_name}") \
-                    .option("mergeSchema", "true") \
-                    .saveAsTable(f"{DestinationSchema}.{src_name}_{table_name}")
+                source_df2.write.json(f"/mnt/adls_landing/bronze/{src_name}_{table_name}", mode = "overwrite")
             except Exception as e:
                 print(e)
                 V_error_message = str(e)
@@ -273,23 +266,6 @@ except Exception as e:
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select * from kpi_etl_analytics_conf.ctl_bl_sl_mapping
-
-# COMMAND ----------
-
-print(source_column_names)
-print(destination_column_names)
-print(set(source_column_names) - set(destination_column_names))
-
-# COMMAND ----------
-
-print(f"""INSERT INTO kpi_etl_analytics_conf.ctl_bl_sl_mapping 
-                                    VALUES ({mapping_id}, '{DestinationSchema}', '{src_name}', '{table_name}', '{column_name}', 
-                                    '{src_name}', 'kpi_cloud_sl', 'Hed_{table_name}', '{dst_col_nm}', 'N')""")
-
-# COMMAND ----------
-
 try:
     #Update the WatermarkValue in the metadata table for the next incremental load
     spark.sql(f"""update kpi_etl_analytics_conf.ctl_table_sync set WatermarkValue=current_timestamp() where TableName='{table_name}' and SourceName='{src_name}' """)
@@ -303,21 +279,6 @@ except Exception as e:
     display(V_error_message)
     _, _, tb = sys.exc_info()
     V_error_line = tb.tb_lineno
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select * from kpi_cloud_bl.source4_contact
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select * from kpi_cloud_bl.source1_contact
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select * from kpi_cloud_bl.source3_ext_contact
 
 # COMMAND ----------
 
