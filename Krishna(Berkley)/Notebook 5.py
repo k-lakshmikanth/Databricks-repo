@@ -14,7 +14,15 @@ df.display()
 
 # COMMAND ----------
 
-# MAGIC %fs ls /mnt
+# MAGIC %fs ls /mnt/adls_landing
+
+# COMMAND ----------
+
+df.toPandas().to_json("/dbfs/mnt/adls_landing/bronze/df_json.json",orient="records")
+
+# COMMAND ----------
+
+# MAGIC %fs head /mnt/adls_landing/bronze/df_json.json
 
 # COMMAND ----------
 
