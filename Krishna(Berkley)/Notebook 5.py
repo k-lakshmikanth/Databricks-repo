@@ -22,6 +22,10 @@ df.toPandas().to_json("/dbfs/mnt/adls_landing/bronze/df_json.json",orient="recor
 
 # COMMAND ----------
 
+df.
+
+# COMMAND ----------
+
 # MAGIC %fs head /mnt/adls_landing/bronze/df_json.json
 
 # COMMAND ----------
