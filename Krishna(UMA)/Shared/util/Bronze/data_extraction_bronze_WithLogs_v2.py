@@ -38,7 +38,6 @@ V_JobLogTable="kpi_etl_analytics_conf.etl_job_history"
 
 # COMMAND ----------
 
-
 V_Load = spark.sql(f"""select IsAlwaysFullLoad from kpi_etl_analytics_conf.ctl_table_sync where TableName='{table_name}' and SourceName='{src_name}' """).collect()[0][0]
 print(V_Load)
 if LoadType== 'F' or V_Load == 'Y':
@@ -89,7 +88,7 @@ try:
         try:
             if V_IsDataFromApi=='N':
                 # Extract metadata values
-                query = f"({V_Query} where lastLoadDate >= '{V_WatermarkVlaue}' ) AS custom_query"
+                query = f"({V_Query}) AS custom_query" #  where lastLoadDate >= '{V_WatermarkVlaue}' 
                 source_df = spark.read.jdbc(url=jdbcurl, table=query, properties=connectionProperties)
                 print(query)
             else:
@@ -165,6 +164,9 @@ try:
                         return column_mapping
 
                     def upsert_into_bronze_table(source_df: DataFrame, br_table_name: str, column_mapping: dict,mapping_df: DataFrame):
+                        ############################################
+
+                        ############################################
                         # Register the DataFrames as temporary views
                         source_df2.createOrReplaceTempView("sourcecontact")
                         display(source_df2)
@@ -245,6 +247,7 @@ try:
             try:
                 num_inserted_rows = source_df2.count()
                 source_df2 = source_df2.withColumn("LastmodifiedDate", current_timestamp())
+                print(source_df2.columns)
                 source_df2.write.json(f"/mnt/adls_landing/bronze/{src_name}_{table_name}", mode = "overwrite")
             except Exception as e:
                 print(e)
@@ -263,6 +266,11 @@ except Exception as e:
     _, _, tb = sys.exc_info()
     V_error_line = tb.tb_lineno
 
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT * FROM sourcecontact
 
 # COMMAND ----------
 
