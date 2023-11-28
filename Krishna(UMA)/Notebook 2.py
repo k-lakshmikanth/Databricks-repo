@@ -55,3 +55,7 @@ dbutils.fs.ls("bronze")
 # COMMAND ----------
 
 spark.sql('SELECT * FROM kpi_etl_analytics_conf.ctl_bl_sl_mapping').columns
+
+# COMMAND ----------
+
+spark.conf.get("fs.azure.account.au")
