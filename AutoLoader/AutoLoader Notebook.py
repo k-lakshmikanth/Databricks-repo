@@ -16,3 +16,11 @@ def Temp():
      .option('cloudFiles.format', 'json')
      .load(f'/mnt/auto-test/Source/user_json/')
  )
+
+# COMMAND ----------
+
+# Add
+#     "node_type_id": "Standard_DS3_v2",
+#     "driver_node_type_id": "Standard_DS3_v2",
+# And remove
+# any other Attributes  otherthan num_workers
