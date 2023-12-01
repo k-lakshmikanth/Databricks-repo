@@ -1,0 +1,22 @@
+name: Deploy Databricks
+run-name: Deploy Databricks
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3.2.0
+
+      - name: Databricks Deploy
+        uses: antstackio/databricks-deploy@v1.0.4
+        with:
+          #databricks-repo-branch: 'your branch name'
+          databricks-token: 'dapi3d98cb04a3bd52867b95fcb1da83acb0'
+          databricks-host: 'https://adb-8597817524679752.12.azuredatabricks.net'
+          #databricks-repo-id: 'get repo id from databricks'
+################### End of workflow file ###################
