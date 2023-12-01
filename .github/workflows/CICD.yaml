@@ -18,5 +18,5 @@ jobs:
           #databricks-repo-branch: 'your branch name'
           databricks-token: 'dapi3d98cb04a3bd52867b95fcb1da83acb0'
           databricks-host: 'https://adb-8597817524679752.12.azuredatabricks.net'
-          #databricks-repo-id: 'get repo id from databricks'
+          databricks-repo-id: '2499229271459890'
 ################### End of workflow file ###################
