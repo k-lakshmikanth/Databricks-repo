@@ -15,7 +15,7 @@ jobs:
       - name: Databricks Deploy
         uses: antstackio/databricks-deploy@v1.0.4
         with:
-          databricks-repo-branch: ''
+          databricks-repo-branch: 'master'
           databricks-token: 'dapiad9348dacdf310c8362251511c6b3c2a'
           databricks-host: 'https://adb-3764127576722237.17.azuredatabricks.net'
           databricks-repo-id: '1019267213786489'
