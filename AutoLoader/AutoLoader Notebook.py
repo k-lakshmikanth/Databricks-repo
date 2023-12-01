@@ -9,6 +9,10 @@
 
 # COMMAND ----------
 
+import dlt
+
+# COMMAND ----------
+
 @dlt.table(table_properties={'quality': 'bronze'})
 def Temp():
   return (
