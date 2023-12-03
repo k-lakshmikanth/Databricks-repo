@@ -16,7 +16,7 @@ jobs:
         uses: antstackio/databricks-deploy@v1.0.4
         with:
           databricks-repo-branch: 'master'
-          databricks-token: 'dapi3c1c4d97fd3a6a1638271b3900a3e55c'
+          databricks-token: 'dapi28d9aeda552e88d1c599aea7914463c0'
           databricks-host: 'https://adb-6561072317183116.16.azuredatabricks.net'
-          databricks-repo-id: '1019267213786490'
+          databricks-repo-id: '3422444267223143'
 ################### End of workflow file ###################
