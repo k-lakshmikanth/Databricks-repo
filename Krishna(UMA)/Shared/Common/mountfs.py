@@ -1,6 +1,6 @@
 # Databricks notebook source
 # Getting access key of ADLS using scope and storing it in variable
-ACCESS_KEY = "MLO0vbHDaHRV9QrCj/J9X5iskna1GCe/ro6HF/lk/ZIh7lpAryaKwx71UYa5PgZCegLU2uxL2mn++AStgL9pGw=="# dbutils.secrets.get(scope = "keyvaultscope" , key = "kpidatalakestoreAcesskey")
+ACCESS_KEY = "sNKbFvGTr1dUw8nhD5QTUD8YT0+aLuAiBYgmvWGqqSfZxmisvp2O0KRcArO1Cz/k2UUxdzbeIxSZ+ASty4e3jA=="# dbutils.secrets.get(scope = "keyvaultscope" , key = "kpidatalakestoreAcesskey")
 
 # COMMAND ----------
 
@@ -8,9 +8,9 @@ try:
     {
         #dbutils.fs.unmount("/mnt/adls_landing/metadata")
         dbutils.fs.mount(
-        source="wasbs://metadata@adlskrishna1.blob.core.windows.net",
+        source="wasbs://metadate@adlskrishna2.blob.core.windows.net",
         mount_point="/mnt/adls_landing/metadata",
-        extra_configs={"fs.azure.account.key.adlskrishna1.blob.core.windows.net":ACCESS_KEY}
+        extra_configs={"fs.azure.account.key.adlskrishna2.blob.core.windows.net":ACCESS_KEY}
         )
     }
 except:
